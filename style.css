@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
-* {
+* { margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: #df5d86;
 }
@@ -64,7 +64,7 @@ header ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 656px;
+    height: 668px;
 }
 
 .intro {
@@ -144,22 +144,27 @@ header ul {
 
 .skills-services-hobbies-cont {
     display: flex;
-    border: 1px solid grey;
-    background-color: white;
+    border: 1px solid #E6ECF8;
+    background-color: #ffffff;
     border-radius: 16px;
     box-shadow: 0 1px 8px 0 #df5d86, 0 0px 10px 0 #df5d86;
 }
 
 .card {
-    color: black;
+    color: #272020;
     width: 33.333%;
     padding: 20px;
     text-align: center;
 }
 
+.card1 {
+    border-right: 1px solid #ece4e4;
+}
+
 .img-cont {
     display: flex;
     justify-content: center;
+    margin-bottom: 32px;
 }
 
 .img-card {
@@ -173,8 +178,22 @@ header ul {
     background-color: #df5d86;
 }
 
-.card1 {
-    border-right: 1px solid grey;
+.head-text {
+    font-size: 18px;
+    margin: 24px;
+} 
+
+.card p {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 42px;
+}
+
+.card-head {
+    font-size: 16px;
+    font-weight: normal;
+    color: #5b5beb;
+    margin-bottom: 16px;
 }
 
 .card-li ul {
@@ -182,9 +201,11 @@ header ul {
     padding: 0px;
 }
 
-/* .card-u li {
+.card li {
+    font-size: 16px;
+    font-weight: normal;
     margin-bottom: 8px;
-} */
+}
 
 /* CONTACT PAGE STYLING */
 .contact {
