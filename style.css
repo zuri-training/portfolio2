@@ -33,6 +33,10 @@ header {
     padding: 20px;
 }
 
+.logo a {
+    text-decoration: none;
+}
+
 .logo-b {
     font-family: 'Silkscreen', cursive;
     font-size: 24px;
@@ -54,8 +58,7 @@ header ul {
     color: var(--body-text);
 }
 
-.home-sect,
-.aboutme {
+.aboutme, .home-sect, .my-skills {
     width: 85%;
     margin: 0 auto;
     display: flex;
@@ -138,6 +141,50 @@ header ul {
     font-size: 24px;
     font-weight: 400;
 }
+
+.skills-services-hobbies-cont {
+    display: flex;
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 1px 8px 0 #df5d86, 0 0px 10px 0 #df5d86;
+}
+
+.card {
+    color: black;
+    width: 33.333%;
+    padding: 20px;
+    text-align: center;
+}
+
+.img-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.img-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    padding: 16px 32px;
+    border: 1px solid #df5d86;
+    border-radius: 50%;
+    background-color: #df5d86;
+}
+
+.card1 {
+    border-right: 1px solid grey;
+}
+
+.card-li ul {
+    list-style: none;
+    padding: 0px;
+}
+
+/* .card-u li {
+    margin-bottom: 8px;
+} */
 
 /* CONTACT PAGE STYLING */
 .contact {
