@@ -4,6 +4,7 @@
 * { margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 html, body {
@@ -100,13 +101,19 @@ header ul {
     color: var(--body-text);
 }
 
-.aboutme, .home-sect, .my-skills {
+.nav-links a:hover {
+    color: #eba8bd;
+    text-decoration: underline solid #df5d86 4px; 
+    font-size: 20.5px;
+}
+
+.hero-sect, .aboutme, .my-services {
     width: 85%;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 668px;
 }
 
 .intro {
@@ -153,9 +160,7 @@ header ul {
 }
 
 .aboutme {
-    display: flex;
     color: var(--body-text);
-    justify-content: space-between;
 }
 
 .aboutme-img {
@@ -170,7 +175,6 @@ header ul {
     width: 80%;
     display: flex;
     flex-direction: column;
-
 }
 
 .aboutme-info h2 {
@@ -184,7 +188,11 @@ header ul {
     font-weight: 400;
 }
 
-.skills-services-hobbies-cont {
+.my-services {
+    width: 50%;
+}
+
+.services-cont {
     display: flex;
     border: 1px solid #E6ECF8;
     background-color: #ffffff;
@@ -194,7 +202,7 @@ header ul {
 
 .card {
     color: #272020;
-    width: 33.333%;
+    width: 50%;
     padding: 20px;
     text-align: center;
 }
@@ -223,7 +231,7 @@ header ul {
 .head-text {
     font-size: 18px;
     margin: 24px;
-} 
+}
 
 .card p {
     font-size: 16px;
@@ -249,11 +257,69 @@ header ul {
     margin-bottom: 8px;
 }
 
+.my-projects {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.projects p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    color: var(--text);
+    margin: 10px 0px 44px 0px;
+}
+
+.gallery {
+    padding: 8px;
+}
+
+.gallery-sub {
+    display: flex;
+    gap: 32px;
+}
+
+.gallery-card {
+    width: 33.3333%;
+    height: 100%;
+    border: 1px solid grey;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.card-img {
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.gallery-card a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: var(--text);
+}
+
+.footer {
+    margin-bottom: 4px;
+    ;
+}
+
 /* CONTACT PAGE STYLING */
 .contact {
     display: flex;
     width: 90%;
-    margin: 47px auto;
+    margin: 47px auto 102px;
 }
 
 .contact-info {
@@ -383,61 +449,7 @@ textarea {
     font-size: 16px;
     padding: 12px 20px;
     cursor: pointer;
-
 }
-
-footer {
-    display: flex;
-    justify-content: center;
-    color: var(--text);
-}
-
-/* PROJECTS PAGE */
-.projects {
-    width: 85%;
-    margin: 0 auto;
-}
-
-.projects p {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 200;
-    color: var(--text);
-    margin: 10px 0px 44px 0px;
-}
-
-.gallery-sub {
-    display: flex;
-    gap: 32px;
-}
-
-.gallery-card {
-    width: 33.3333%;
-    height: 100%;
-    border: 1px solid grey;
-    border-radius: 16px;
-    margin-bottom: 24px;
-}
-
-.card-img {
-    width: 100%;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-}
-
-.gallery-card a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 200;
-    color: white;
-}
-
-
-
 
 /* RESPONSIVE DESIGN STYLES */
 @media (max-width: 800px) {
